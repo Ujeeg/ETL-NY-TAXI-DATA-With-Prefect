@@ -14,11 +14,11 @@ The aim of this data engineering project is to create a robust ETL (Extract, Tra
 ## Create local storeage (PgAdmin) using Docker:
 1. Create PgAdmin Connection
 2. Create local DataBase
-Connection Setup with docker ![](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/4d007f876becd48befa652d14a190e0f49dd17c3/local%20Storage/Setting%20Network%20Manually.yml)
+ ![Connection Setup with docker](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/4d007f876becd48befa652d14a190e0f49dd17c3/local%20Storage/Setting%20Network%20Manually.yml)
 
 ## Create python scripts file Data Flow and Task with Prefect :
 ## 1. File 1 to ETL to local postgre
-Code source ![Code Source](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/8304d5483a3366f67cbdb33376de48a4c6b53b4f/ingest_data.py)
+![Source Code](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/8304d5483a3366f67cbdb33376de48a4c6b53b4f/ingest_data.py)
 
 ### Data Extraction :
 1. downdload file data from url
@@ -33,7 +33,7 @@ Code source ![Code Source](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefec
 2. Load data to local storage with connection block prefect_SqlAlchemy
 
 ## 2. File 2 to Load data from local postgre to BigQuery
-Code source ![](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/8304d5483a3366f67cbdb33376de48a4c6b53b4f/load_to_Bq.py)
+![Source Cod](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/8304d5483a3366f67cbdb33376de48a4c6b53b4f/load_to_Bq.py)
 ### Data Loading to BigQuery
 1. Set up a Google Cloud Platform (GCP) project and enable BigQuery.
 2. Create database in BigQuery that mirror the structure of the local PostgreSQL database.
