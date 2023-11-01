@@ -33,7 +33,7 @@ The aim of this data engineering project is to create a robust ETL (Extract, Tra
 2. Load data to local storage with connection block prefect_SqlAlchemy
 
 ## 2. File 2 to Load data from local postgre to BigQuery
-![Source Cod](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/8304d5483a3366f67cbdb33376de48a4c6b53b4f/load_to_Bq.py)
+![Source Code](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/8304d5483a3366f67cbdb33376de48a4c6b53b4f/load_to_Bq.py)
 ### Data Loading to BigQuery
 1. Set up a Google Cloud Platform (GCP) project and enable BigQuery.
 2. Create database in BigQuery that mirror the structure of the local PostgreSQL database.
@@ -44,6 +44,13 @@ The aim of this data engineering project is to create a robust ETL (Extract, Tra
 1. Create deployment ingst data in Prefect
 2. Setup deployment in prefert UI
 3. Test deployment
+- lngest_data.py Flow
+![](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/0471692e463e6d1585492497764b696c6fb79401/Picture/ingest%20data%20flow.jpg)
+
+- local_to_Bq.py Flow
+![](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/main/Picture/Load_to_bq%20flow.jpg)
+
+
 
 ### Scheduling and Automation
 1. Lmplement scheduling mechanisms  Prefect flows to run the ETL pipeline at predefined intervals
@@ -68,5 +75,6 @@ This project aims to create a scalable and efficient ETL pipeline that extracts 
 
 # Notes :
 Typically, in ETL processes using GCP, data is extracted, transformed, and loaded into a bucket, then transformed again before being loaded into the BigQuery data warehouse. However, in this case, I don't have a premium GCP account, so I am seeking an alternative bucket, namely local PostgreSQL
+
 
    
