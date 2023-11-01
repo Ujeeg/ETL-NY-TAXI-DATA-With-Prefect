@@ -15,19 +15,26 @@ The aim of this data engineering project is to create a robust ETL (Extract, Tra
 1. Create PgAdmin Connection
 2. Create local DataBase
 
-## Create Data Flow and Task with Prefect 
+## Create python Data Flow and Task with Prefect :
 ### Data Extraction :
-1. ![downdload file data from url](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/f93233da3d5d90abc7c2435c13f0b89d63174d85/Picture/download%20File.png)
+1. downdload file data from url
+
+   ![](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/f93233da3d5d90abc7c2435c13f0b89d63174d85/Picture/download%20File.png)
+
 2. compressing file from csv.gzip to csv
 
+   !()[https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/be87665d9a73136ca4ba823698996381f1ce59d4/Picture/exctract%20data%20from%20pg%20sql.png]
+
 ### Data Transform
+
+   !()[https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/be87665d9a73136ca4ba823698996381f1ce59d4/Picture/transform%20data.png]
+   
 1. transform data to datetime
 2. clean and preprocessing the extracted tade to handle missing value
 
 ### Load to local storage (PostgreSQL)
 1. Create Postgre Block in prefect
-2. Use Python and relevant libraries (e.g., pandas, SQLAlchemy) for ETL scripting.
-3. Load data to local storage with connection block prefect_SqlAlchemy
+2. Load data to local storage with connection block prefect_SqlAlchemy
 
 ### Data Loading to BigQuery
 1. Set up a Google Cloud Platform (GCP) project and enable BigQuery.
