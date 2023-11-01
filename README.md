@@ -14,32 +14,33 @@ The aim of this data engineering project is to create a robust ETL (Extract, Tra
 ## Create local storeage (PgAdmin) using Docker:
 1. Create PgAdmin Connection
 2. Create local DataBase
-   
-## Data Extraction :
-1. downdload file data from url
+
+## Create Data Flow and Task with Prefect 
+### Data Extraction :
+1. ![downdload file data from url](https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect/blob/f93233da3d5d90abc7c2435c13f0b89d63174d85/Picture/download%20File.png)
 2. compressing file from csv.gzip to csv
 
-## Data Transform
+### Data Transform
 1. transform data to datetime
 2. clean and preprocessing the extracted tade to handle missing value
 
-## Load to local storage (PostgreSQL)
+### Load to local storage (PostgreSQL)
 1. Create Postgre Block in prefect
 2. Use Python and relevant libraries (e.g., pandas, SQLAlchemy) for ETL scripting.
 3. Load data to local storage with connection block prefect_SqlAlchemy
 
-## Data Loading to BigQuery
+### Data Loading to BigQuery
 1. Set up a Google Cloud Platform (GCP) project and enable BigQuery.
 2. Create database in BigQuery that mirror the structure of the local PostgreSQL database.
 3. Create Block Google Credentian and setting IAM admin
 4. Load Data from PostgreSql to BigQuery
 
-## Create Deplooyment
+### Create Deplooyment
 1. Create deployment ingst data in Prefect
 2. Setup deployment in prefert UI
 3. Test deployment
 
-## Scheduling and Automation
+### Scheduling and Automation
 1. Lmplement scheduling mechanisms  Prefect flows to run the ETL pipeline at predefined intervals
 2. Automate the entire ETL process to ensure regular updates.
 
